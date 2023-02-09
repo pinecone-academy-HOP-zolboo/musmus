@@ -82,10 +82,9 @@ var data = [{
 function HomePage() {
     return (
       <div className="home">
-        <div>
-            <h1>Blog posts</h1>
-            <div>Our latest updates and blogs about managing your team</div>
-        </div>
+            <h1 className='h1'>Blog posts</h1>
+            <div className='title'>Our latest updates and blogs about managing your team</div>
+
         <div className='posts'>
         {
             data.map((data)=> <MiniiPost img={data.img} title={data.title} description={data.description} profileImg={data.profileImg} profileName={data.profileName} postDate={data.postDate}/>)

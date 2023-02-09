@@ -10,4 +10,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
+    margin-top: 50px;
+}
+.h1{
+    position: relative; 
+    display: flex;
+}
+.title{
+    position: relative; 
+    display: flex;
+    color: #6D7D8B;
 }
