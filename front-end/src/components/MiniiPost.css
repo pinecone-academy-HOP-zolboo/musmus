@@ -4,7 +4,7 @@ margin-top: 20px;
  height: 320px;
  display: flex;
  flex-direction: column;
- border: 1px solid black;
+background-color: #FFFFFF;
  border-radius: 20px;
  box-sizing: border-box;
  object-fit: cover;
