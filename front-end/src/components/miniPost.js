@@ -1,8 +1,6 @@
-import "./MiniiPost.css"
+import "../css/miniPost.css"
 import img1 from './image/1.png'
-function MiniiPost(props) {
-
-    const {img , title , description, profileImg , profileName , postDate} = props
+export const MiniPost = ({img , title , description, profileImg , profileName , postDate}) => {
 
     return(
         <div className="Miniipost">
@@ -17,4 +15,3 @@ function MiniiPost(props) {
         </div>
     )
 }
-export default MiniiPost

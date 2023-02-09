@@ -1,5 +1,5 @@
 import './homepage.css';
-import MiniiPost from './components/miniPost';
+import { MiniPost } from './components/miniPost';
 import postImg from './components/image/1.png'
 import userImg from './components/image/user1.png'
 var data = [{
@@ -79,7 +79,7 @@ var data = [{
     profileName : "Wade Warren",
     postDate : "2nd January,2022"
 }]
-function HomePage() {
+export const HomePage = () => {
     return (
       <div className="home">
             <h1 className='h1'>Blog posts</h1>
@@ -87,7 +87,7 @@ function HomePage() {
 
         <div className='posts'>
         {
-            data.map((data)=> <MiniiPost img={data.img} title={data.title} description={data.description} profileImg={data.profileImg} profileName={data.profileName} postDate={data.postDate}/>)
+            data.map((data)=> <MiniPost img={data.img} title={data.title} description={data.description} profileImg={data.profileImg} profileName={data.profileName} postDate={data.postDate}/>)
         }
         </div>
        
@@ -95,5 +95,3 @@ function HomePage() {
       </div>
     );
   }
-  
-  export default HomePage;

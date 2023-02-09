@@ -1,0 +1,46 @@
+.Miniipost{
+margin-top: 20px;
+ width: 300px;
+ height: 320px;
+ display: flex;
+ flex-direction: column;
+background-color: #FFFFFF;
+ border-radius: 20px;
+ box-sizing: border-box;
+ object-fit: cover;
+ align-items: center;
+}
+.PostImage{
+    width: 100%;
+    height: 117px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.PostTitle{
+    margin-top: 16px;
+    height: 48px;
+    width: 270px;
+}
+.PostDescription{
+    width: 250px;
+    height: 40px;
+}
+.PostProfile{
+    margin-top: 47px;
+    display: flex;
+    align-items: center;
+}
+.ProfileImage{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.ProfileName{
+    color: #6D7D8B;
+    font-size: 12px;
+}
+.ProfileDate{
+    color: #6D7D8B;
+    font-size: 12px;
+}
