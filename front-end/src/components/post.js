@@ -2,10 +2,12 @@ import '../css/post.css'
 import Host from './image/Ellipse.svg'
 import postImg from './image/Rectangle.svg'
 import commentImg from './image/Ellipse (1).svg'
+import { Header } from './header'
 
 export const Post = () => {
     return(
         <div className="container">
+            <Header />
             <div className='mainContainer'>
                 <div className="header">    
                 </div>
