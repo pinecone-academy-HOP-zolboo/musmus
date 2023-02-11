@@ -16,8 +16,9 @@
     position: relative; 
     display: flex;
 }
-.title{
+.titleDescription{
     position: relative; 
     display: flex;
     color: #6D7D8B;
+    font-size: 18px;
 }

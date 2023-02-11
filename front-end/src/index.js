@@ -4,8 +4,7 @@ import './index.css';
 import App from './App';
 import { Post } from './components/post';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { HomePage } from './homepage';
-import reportWebVitals from './reportWebVitals';
+import { HomePage } from './homepage';  
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
