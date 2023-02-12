@@ -50,8 +50,8 @@
     width: 80vw;
 }
 .postImg{
-    width: 80vw;
-    height: 40vh;
+    height: auto;
+    width: 80%;
 }
 .description{
     width: 60vw;

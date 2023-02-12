@@ -3,11 +3,18 @@ import Host from './image/Ellipse.svg'
 import postImg from './image/Rectangle.svg'
 import commentImg from './image/Ellipse (1).svg'
 import { Header } from './header'
+import { useParams } from 'react-router-dom'
 
 export const Post = () => {
+    const { postId }  = useParams();
+    // backend tei holbood ajiluulna
+    
+    // const getPostData = async () => {
+    //     const res = await axios.get(`/blog/${postId}`)
+    // }
     return(
         <div className="container">
-            <Header />
+            {/* <Header /> */}
             <div className='mainContainer'>
                 <div className="header">    
                 </div>
