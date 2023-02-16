@@ -4,14 +4,30 @@ import postImg from './image/Rectangle.svg'
 import commentImg from './image/Ellipse (1).svg'
 import { Header } from './header'
 import { useParams } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import axios from "axios"
 
 export const Post = () => {
-    const { postId }  = useParams();
-    // backend tei holbood ajiluulna
+    const [post, setPost] = useState([])
+    const id  = useParams();
+
+    const instanse = axios.create({
+        baseURL: `http://localhost:8000/`
+    })
     
-    // const getPostData = async () => {
-    //     const res = await axios.get(`/blog/${postId}`)
-    // }
+    const getPost = async () => {
+        try {
+            const res = await instanse.get(`/blog/${id}`)
+            setPost(res.data.data)
+            console.log(res.data.data)
+        } catch (error) {
+            alert("Error")
+        }
+    }
+    useEffect(() => {
+        getPost()
+    }, [])
+
     return(
         <div className="container">
             {/* <Header /> */}
