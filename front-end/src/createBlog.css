@@ -1,0 +1,4 @@
+.createBlog{
+    display: flex;
+    flex-direction: column;
+}

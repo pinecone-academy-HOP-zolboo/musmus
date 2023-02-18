@@ -1,17 +1,15 @@
 const { model, Schema } = require('mongoose');
 
 const PostSchema = new Schema({
+    userRole : String,
+    img : String, //dd
+    title : String ,
     description: String,
-    userId: String,
-    userName: String,
-    userProfile: String,
-    like: {
-        type: Number,
-        default: 0
-    },
-    images: String,
-    comment:[String],
-    registerDate:{type :Date, default: Date.now},
+    profileImg : String , //dd
+    profileName: String,
+    postDate :{type :Date, default: Date.now},
+    postText : String,
+    blogPhoto : String //dd
 })
 
 const PostModel = model('Post', PostSchema);

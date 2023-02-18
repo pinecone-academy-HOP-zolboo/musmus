@@ -1,29 +1,29 @@
 const express = require("express");
 const router = express.Router();
 const bodyParser = require("body-parser");
-const port = 8000;
 const app = express();
-const cors = require('cors')
-
+const cors = require('cors');
 const connect = require("./db");
 
-connect();
+const port = 8000;
 
 const {
-  createUser,
-  getUsers,
-  getUser
+  getPosts,
+  getPost,
+  createPost
 
   } = require("./Controller");
 
 router
-  .post("/", createUser)
-  .get("/", getUsers)
-  .get("/:id", getUser)
+  .get("/", getPosts)
+  .get(`/:id`, getPost)
+  .post("/post" , createPost)
+
+  connect();
 
 app.use(bodyParser.json());
 app.use(cors())
 app.use(router);
 app.listen(port, () => {
-  `working${port}`;
+  console.log(`working${port}`) ;
 });

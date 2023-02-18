@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
-const uri = "";
+const uri = "mongodb+srv://Erdenebulgan:bulgaa1106@cluster0.mggs5zn.mongodb.net/?retryWrites=true&w=majority";
 const connect = async () => {
   try {
     await mongoose.connect(uri);
-    console.log("Connected");
+    console.log("database Connected");
   } catch (error) {
     console.log(error);
   }
