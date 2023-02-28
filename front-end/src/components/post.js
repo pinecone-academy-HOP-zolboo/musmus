@@ -26,7 +26,7 @@ export const Post = () => {
 
     return (
         <div className="container">
-            {/* <Header /> */}
+            <Header />
             <div className='mainContainer'>
                 <div className="header">
                 </div>
