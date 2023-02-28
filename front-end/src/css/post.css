@@ -41,7 +41,8 @@
 }
 .hostImage{
     height: 8vh;
-    width: 10vw;
+
+    border-radius: 50%;
 }       
 .mainPost{
     display: flex;

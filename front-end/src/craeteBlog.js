@@ -62,13 +62,23 @@ const CreatePost = () => {
     return(
         <div className="createBlog">
             <input value={userRole} onChange={(e) => {setUserRole(e.target.value)}} placeholder="UserRole" />
-            <input type="file" onChange={(e) => {encodeImgFileAsURL(e.target)}} placeholder="img" />
+            <div>
+                main img
+                <input type="file" onChange={(e) => {encodeImgFileAsURL(e.target)}} placeholder="img" />
+            </div>
             <input value={title} onChange={(e) => {setTitle(e.target.value)}} placeholder="title"/>
             <input value={description} onChange={(e) => {setDescription(e.target.value)}} placeholder="description"/>
-            <input type="file" onChange={(e) => {encodeProfileImgFileAsURL(e.target)}} placeholder="profileImg"/>
+            <div>
+                profile img
+                <input type="file" onChange={(e) => {encodeProfileImgFileAsURL(e.target)}} placeholder="profileImg"/>
+            </div>
             <input value={profileName} onChange={(e) => {setProfileName(e.target.value)}} placeholder="profileName"/>
             <input value={postText} onChange={(e) => {setPosttext(e.target.value)}} placeholder="postText"/>
-            <input type="file" onChange={(e) => {encodeBlogPhotoFileAsURL(e.target)}} placeholder="blogPhoto"/>
+            <div>
+                    blog photo
+                <input type="file" onChange={(e) => {encodeBlogPhotoFileAsURL(e.target)}} placeholder="blogPhoto"/>
+            </div>
+
             <button onClick={()=> post()}>Post</button>
         </div>
     )
