@@ -101,7 +101,7 @@ export const HomePage = () => {
     }, [])
     return (
       <div className="home">
-        {/* <Header />   */}
+        <Header />  
             <h1 className='h1'>Blog posts</h1>
             <div className='titleDescription'>Our latest updates and blogs about managing your team</div>
 
