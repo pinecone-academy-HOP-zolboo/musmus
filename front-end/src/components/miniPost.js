@@ -8,11 +8,11 @@ export const MiniPost = ({id ,img , title , description, profileImg , profileNam
     }
     return(
         <div className="Miniipost" onClick={onClickPost}>
-            <img src={img} className="PostImage" />
+            <img src={`data:image/jpeg;base64,${img}`} className="PostImage" />
             <div className="PostTitle">{title}</div>
             <div className="PostDescription">{description}</div>
             <div className="PostProfile">
-                <img src={profileImg} className="ProfileImage"/>
+                <img src={`data:image/jpeg;base64,${profileImg}`} className="ProfileImage"/>
                 <div className="ProfileName">{profileName}</div>
                 <div className="ProfileDate">{postDate}</div>
             </div>
