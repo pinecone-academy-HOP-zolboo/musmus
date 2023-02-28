@@ -1,15 +1,29 @@
-const express = require('express');
-
-const http = require("http");
+const express = require("express");
+const router = express.Router();
+const bodyParser = require("body-parser");
+const app = express();
+const cors = require('cors');
+const connect = require("./db");
 
 const port = 8000;
 
-const server = http.createServer((request,  response) => {
-    response.statusCode = 200;
-    response.setHeader("Content-Type" , "text/plain");
-    response.end("Hello world\n")
-});
+const {
+  getPosts,
+  getPost,
+  createPost
 
-server.listen(port , () => {
-    console.log(`Server running at http://localhost:${port}`)
-})
+  } = require("./Controller");
+
+router
+  .get("/", getPosts)
+  .get(`/:id`, getPost)
+  .post("/post" , createPost)
+
+  connect();
+
+app.use(bodyParser.json());
+app.use(cors())
+app.use(router);
+app.listen(port, () => {
+  console.log(`working${port}`) ;
+});
