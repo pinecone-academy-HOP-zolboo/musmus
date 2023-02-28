@@ -37,10 +37,10 @@ export const Post = () => {
                     <div className='postDate'>
                         <div className='whoPosted'>
                             <img src={`data:image/jpeg;base64,${post.profileImg}`} className='hostImage' />
-                            <div style={{ width: "8vw" }}>{post.profileName}</div>
+                            <div style={{ width: "5vw" }}>{post.profileName}</div>
                         </div>
                         |
-                        <div>{post.postDate}</div>
+                        <div>{post.postDate}</div> 
                     </div>
                 </div>
                 <div className='mainPost'>

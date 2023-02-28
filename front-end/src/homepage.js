@@ -1,7 +1,5 @@
 import './homepage.css';
 import { MiniPost } from './components/miniPost';
-import postImg from './components/image/1.png'
-import userImg from './components/image/user1.png'
 import { Header } from './components/header.js'
 import { useEffect, useState } from 'react';
 import axios from 'axios';

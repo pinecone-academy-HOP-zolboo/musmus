@@ -40,8 +40,8 @@
     width: 10vw;
 }
 .hostImage{
-    height: 8vh;
-
+    height: 6vh;
+    width: 6vh;
     border-radius: 50%;
 }       
 .mainPost{
@@ -80,6 +80,7 @@
 }
 .writerInfo{
     width: 20vw;
+    margin-left: 1vw;
 }
 hr{
     width: 60vw;
